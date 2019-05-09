@@ -68,9 +68,21 @@
                                     <action selector="IniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xF-dG-5SO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-J9-3RJ" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="87.5" y="455" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4RW-ZT-O2z"/>
+                                    <constraint firstAttribute="width" constant="200" id="Z5I-BG-w3o"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="butfb"/>
+                                <connections>
+                                    <action selector="IniciarSesionFacebookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ouv-Wn-1a7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="d3Z-J9-3RJ" firstAttribute="top" secondItem="VEm-rD-lzr" secondAttribute="bottom" constant="-7" id="40x-2X-vZG"/>
                             <constraint firstItem="zBQ-b1-YbC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sF-wK-sZ0"/>
                             <constraint firstItem="VEm-rD-lzr" firstAttribute="top" secondItem="zBQ-b1-YbC" secondAttribute="bottom" constant="30" id="KzE-lI-bzJ"/>
                             <constraint firstItem="daH-nM-CYS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OYr-Nq-oRy"/>
@@ -79,6 +91,7 @@
                             <constraint firstItem="VXs-11-spj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dQI-Ie-y6Q"/>
                             <constraint firstItem="LWc-nU-iUo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hS9-LP-Lvs"/>
                             <constraint firstItem="VXs-11-spj" firstAttribute="top" secondItem="LWc-nU-iUo" secondAttribute="bottom" constant="25" id="pHG-oY-e4X"/>
+                            <constraint firstItem="d3Z-J9-3RJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pV4-og-1tw"/>
                             <constraint firstItem="VEm-rD-lzr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qgf-h4-gMv"/>
                             <constraint firstItem="rac-hR-mGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wLh-gX-DTL"/>
                             <constraint firstItem="LWc-nU-iUo" firstAttribute="top" secondItem="rac-hR-mGD" secondAttribute="bottom" constant="25" id="y47-yc-6hV"/>
@@ -87,6 +100,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="butt" destination="d3Z-J9-3RJ" id="1uU-zW-cDy"/>
                         <outlet property="emailTextField" destination="LWc-nU-iUo" id="e94-On-bYT"/>
                         <outlet property="passwordTextField" destination="zBQ-b1-YbC" id="heO-Jg-2Ui"/>
                     </connections>
@@ -97,6 +111,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="butfb" width="480" height="230"/>
         <image name="imagen" width="128" height="128"/>
     </resources>
 </document>
