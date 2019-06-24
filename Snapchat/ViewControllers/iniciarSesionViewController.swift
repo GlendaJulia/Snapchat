@@ -43,7 +43,7 @@ class iniciarSesionViewController: UIViewController, LoginButtonDelegate{
         Auth.auth().signIn(withEmail: emailTextField.text! , password: passwordTextField.text!) { (user, error) in
             print("Intentando Iniciar Sesion")
             if error != nil {
-                print("Se presento el siguiente error: \(error)")
+                print("Se presento el siguiente error: ")
                 let alerta = UIAlertController(title: "Usuario no existe", message: "El Usuario: \(self.emailTextField.text!) no existe :( , CREALO!", preferredStyle: .alert)
                 let btnOK = UIAlertAction(title: "Registrar", style: .default, handler: { (UIAlertAction) in
                     

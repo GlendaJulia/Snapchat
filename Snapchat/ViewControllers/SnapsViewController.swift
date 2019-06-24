@@ -74,6 +74,4 @@ class SnapsViewController: UIViewController,  UITableViewDataSource, UITableView
             siguienteVC.snap = sender as! Snap
         }
     }
-    
-
 }
